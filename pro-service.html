@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pro-Service Auto Repair | Rochester, NY</title>
+  <meta name="description" content="A convenient online home for Pro-Service Auto Repair in Rochester, NY. Request service, call the shop, view hours and get directions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#0b1724;--navy2:#101f2f;--steel:#26384b;--orange:#f26b2b;--orange2:#ff8a4c;--paper:#f5f7f8;--white:#fff;--ink:#12202d;--muted:#62707d;--line:#dce2e6;--green:#2d9d65;--shadow:0 22px 70px rgba(7,20,33,.16)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}body{margin:0;background:var(--paper);color:var(--ink);font:400 1rem/1.6 Inter,Arial,sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}.concept{background:var(--orange);color:#1a1009;text-align:center;padding:7px 12px;font-weight:800;font-size:.72rem;letter-spacing:.11em;text-transform:uppercase}
+    header{position:sticky;top:0;z-index:20;background:rgba(11,23,36,.97);border-bottom:1px solid rgba(255,255,255,.1);color:white;backdrop-filter:blur(14px)}nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px}.brand-icon{position:relative;width:48px;height:48px;border-radius:8px;background:var(--orange);display:grid;place-items:center;color:var(--navy);font:800 1.55rem/1 "Barlow Condensed";transform:skew(-7deg)}.brand-icon span{transform:skew(7deg)}.brand-name strong{display:block;font:800 1.26rem/1 "Barlow Condensed";letter-spacing:.04em;text-transform:uppercase}.brand-name small{display:block;margin-top:5px;color:#aeb8c2;font-size:.63rem;letter-spacing:.15em;text-transform:uppercase}.nav-links{display:flex;align-items:center;gap:27px;font-weight:700;font-size:.88rem}.nav-links>a:hover{color:var(--orange2)}.nav-cta{background:var(--orange);color:var(--navy)!important;padding:12px 18px;border-radius:5px}
+    .hero{position:relative;background:var(--navy);color:white;padding:82px 0 70px;overflow:hidden}.hero:before{content:"";position:absolute;width:640px;height:640px;border:110px solid rgba(255,255,255,.022);border-radius:50%;right:-150px;top:-280px}.hero:after{content:"";position:absolute;inset:auto -5% -100px 40%;height:360px;background:linear-gradient(135deg,transparent 38%,rgba(242,107,43,.09) 38% 40%,transparent 40% 57%,rgba(255,255,255,.035) 57% 59%,transparent 59%);transform:skewX(-12deg)}.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.16fr .84fr;gap:70px;align-items:center}.eyebrow{display:flex;align-items:center;gap:11px;color:var(--orange2);font-weight:800;font-size:.76rem;letter-spacing:.15em;text-transform:uppercase}.eyebrow:before{content:"";width:35px;height:3px;background:var(--orange)}h1,h2,h3{margin:0;line-height:1.04;font-family:"Barlow Condensed",sans-serif;text-transform:uppercase}h1{max-width:720px;font-size:clamp(3.75rem,7vw,7.2rem);letter-spacing:-.035em;margin:20px 0 25px}.hero-copy>p{max-width:635px;color:#c9d0d7;font-size:1.13rem;margin:0 0 31px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.btn{min-height:52px;padding:0 22px;display:inline-flex;align-items:center;justify-content:center;border:1px solid transparent;border-radius:5px;font-weight:800;transition:.2s;cursor:pointer}.btn.primary{background:var(--orange);color:var(--navy)}.btn.primary:hover{background:var(--orange2);transform:translateY(-2px)}.btn.secondary{border-color:#647383;color:white;background:rgba(255,255,255,.03)}.btn.secondary:hover{border-color:white;background:rgba(255,255,255,.08)}
+    .quick-card{background:white;color:var(--ink);border-top:6px solid var(--orange);padding:28px;box-shadow:var(--shadow)}.quick-card h2{font-size:2rem}.quick-card>p{color:var(--muted);margin:8px 0 22px}.quick-list{display:grid;gap:10px}.quick-link{display:grid;grid-template-columns:45px 1fr 20px;gap:13px;align-items:center;border:1px solid var(--line);padding:14px;transition:.2s;background:white}.quick-link:hover{border-color:var(--orange);transform:translateX(4px)}.quick-icon{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#fff0e8;color:var(--orange)}.quick-icon svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.quick-link strong{display:block;font-size:.93rem}.quick-link small{display:block;color:var(--muted);font-size:.77rem;margin-top:2px}.arrow{font-size:1.35rem;color:var(--orange)}.open-row{margin-top:17px;padding-top:17px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;font-size:.85rem}.open-row strong{color:var(--green)}
+    .trust{background:white;border-bottom:1px solid var(--line)}.trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}.trust-item{padding:26px 24px;border-right:1px solid var(--line)}.trust-item:first-child{padding-left:0}.trust-item:last-child{border:0}.trust-item strong{display:block;font:800 1.65rem/1 "Barlow Condensed";text-transform:uppercase}.trust-item span{display:block;color:var(--muted);font-size:.8rem;margin-top:7px}.stars{color:var(--orange);letter-spacing:.06em;font-size:.86rem}
+    section{padding:96px 0}.section-intro{display:flex;align-items:end;justify-content:space-between;gap:55px;margin-bottom:42px}.section-intro h2{font-size:clamp(2.8rem,5vw,5rem);letter-spacing:-.025em;margin-top:16px}.section-intro p{max-width:520px;color:var(--muted);margin:0;font-size:1.05rem}.ways{background:var(--paper)}.way-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.way-card{position:relative;background:white;border:1px solid var(--line);padding:31px;min-height:290px;display:flex;flex-direction:column;transition:.2s}.way-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}.way-number{position:absolute;right:20px;top:8px;font:800 5.3rem/1 "Barlow Condensed";color:#eef1f3}.way-icon{width:54px;height:54px;border-radius:7px;display:grid;place-items:center;background:var(--navy);color:var(--orange);position:relative}.way-icon svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.way-card h3{font-size:1.65rem;margin:29px 0 9px}.way-card p{color:var(--muted);margin:0 0 23px}.way-card a{margin-top:auto;font-weight:800;color:#c84e15}
+    .services{background:var(--navy);color:white;position:relative;overflow:hidden}.services:after{content:"PRO-SERVICE";position:absolute;right:-35px;bottom:-55px;font:800 clamp(7rem,18vw,17rem)/1 "Barlow Condensed";color:rgba(255,255,255,.023);white-space:nowrap}.services .section-intro{position:relative;z-index:2}.services .section-intro p{color:#aeb8c2}.service-grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);border-left:1px solid rgba(255,255,255,.14);border-top:1px solid rgba(255,255,255,.14)}.service{padding:29px;border-right:1px solid rgba(255,255,255,.14);border-bottom:1px solid rgba(255,255,255,.14);min-height:180px}.service span{display:block;color:var(--orange2);font-weight:800;font-size:.75rem;letter-spacing:.13em;margin-bottom:28px}.service h3{font-size:1.55rem;margin-bottom:10px}.service p{color:#aeb8c2;margin:0;font-size:.9rem}
+    .ready{background:#edf1f3}.ready-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center}.ready h2{font-size:clamp(3rem,5vw,5.2rem);letter-spacing:-.03em;margin:15px 0 20px}.ready-copy>p{color:var(--muted);font-size:1.05rem}.checklist{background:white;box-shadow:var(--shadow);padding:34px}.checklist h3{font-size:1.8rem;margin-bottom:21px}.check{display:grid;grid-template-columns:31px 1fr;gap:13px;padding:15px 0;border-bottom:1px solid var(--line)}.check:last-child{border:0}.check span{width:27px;height:27px;border-radius:50%;display:grid;place-items:center;background:#e6f5ee;color:var(--green);font-weight:900}.check strong{display:block}.check small{display:block;color:var(--muted);margin-top:3px}
+    .reputation{background:white}.rep-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:80px;align-items:center}.score-card{background:var(--orange);color:var(--navy);padding:40px;min-height:350px;display:flex;flex-direction:column;justify-content:space-between}.score-card .big{font:800 clamp(6rem,12vw,10rem)/.8 "Barlow Condensed"}.score-card .big span{font-size:2rem}.score-card .stars{color:var(--navy);font-size:1.25rem}.score-card p{font-weight:800;margin:10px 0 0}.rep-copy h2{font-size:clamp(3rem,5vw,5rem);letter-spacing:-.03em;margin:15px 0 22px}.rep-copy p{color:var(--muted);font-size:1.05rem}.rep-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.rep-links .btn.secondary{color:var(--ink);border-color:var(--line)}
+    .cta{padding:80px 0;background:linear-gradient(115deg,var(--navy),#172d42);color:white}.cta-grid{display:flex;align-items:center;justify-content:space-between;gap:45px}.cta h2{font-size:clamp(3rem,5vw,5.4rem);letter-spacing:-.03em}.cta p{margin:12px 0 0;color:#bec7cf}.cta-actions{display:flex;gap:12px;flex-wrap:wrap;flex-shrink:0}
+    footer{background:#07111b;color:#8e9aa5;padding:38px 0 92px}.footer-grid{display:flex;justify-content:space-between;gap:30px;align-items:flex-start}.footer-grid strong{display:block;color:white;font-family:"Barlow Condensed";font-size:1.25rem;text-transform:uppercase}.footer-grid small{display:block;max-width:520px;margin-top:7px}.footer-info{text-align:right;font-size:.83rem}.mobile-bar{display:none}
+    @media(max-width:900px){.nav-links>a:not(.nav-cta){display:none}.hero-grid,.ready-grid,.rep-grid{grid-template-columns:1fr;gap:48px}.hero-copy{max-width:720px}.quick-card{max-width:620px}.service-grid{grid-template-columns:repeat(2,1fr)}.section-intro{display:block}.section-intro p{margin-top:20px}.cta-grid{display:block}.cta-actions{margin-top:27px}.trust-grid{grid-template-columns:repeat(2,1fr)}.trust-item:nth-child(2){border-right:0}.trust-item:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+    @media(max-width:620px){.wrap{width:calc(100% - 28px)}.concept{font-size:.6rem}.brand-icon{width:39px;height:39px}.brand-name strong{font-size:1rem}.brand-name small{display:none}.nav-cta{font-size:.74rem;padding:10px 12px}nav{height:67px}.hero{padding:58px 0 48px}.hero-grid{gap:40px}h1{font-size:3.65rem}.hero-copy>p{font-size:1rem}.hero-actions{display:grid}.btn{width:100%}.quick-card{padding:20px}.trust-item{padding:20px 11px}.trust-item strong{font-size:1.3rem}.trust-item span{font-size:.7rem}section{padding:72px 0}.way-grid,.service-grid{grid-template-columns:1fr}.way-card{min-height:250px}.service{min-height:145px}.ready-grid,.rep-grid{gap:38px}.checklist{padding:23px 18px}.score-card{min-height:300px;padding:30px}.rep-links{display:grid}.cta{padding:66px 0 42px}.cta-actions{display:grid}.footer-grid{display:block}.footer-info{text-align:left;margin-top:18px}footer{padding-bottom:94px}.mobile-bar{position:fixed;display:grid;grid-template-columns:1fr 1fr;bottom:0;left:0;right:0;z-index:30;background:white;box-shadow:0 -8px 28px rgba(7,20,33,.18)}.mobile-bar a{min-height:61px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.88rem}.mobile-bar a:first-child{color:var(--navy)}.mobile-bar a:last-child{background:var(--orange);color:var(--navy)}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="concept">Website concept prepared for Pro-Service Auto Repair</div>
+  <header>
+    <nav class="wrap" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Pro-Service Auto Repair home">
+        <span class="brand-icon"><span>PS</span></span>
+        <span class="brand-name"><strong>Pro-Service Auto Repair</strong><small>Friendly full-service auto care</small></span>
+      </a>
+      <div class="nav-links">
+        <a href="#options">Quick Options</a><a href="#services">Services</a><a href="#reviews">Reviews</a>
+        <a class="nav-cta" href="tel:+15856971055">Call (585) 697-1055</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Rochester’s convenient neighborhood shop</div>
+          <h1>Car trouble? Let’s make the next step simple.</h1>
+          <p>Request service online, call the shop, check today’s hours or get directions—all from one easy place.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="https://www.mitchell1crm.com/crmutilities/RequestAppointment.aspx?c=EAAAAF9Zk9RWtR9TLxLyuD%2BQtqorLqREYbNuVPWYfHmFP%2BiwoCRCEsiiSPU2TPC7rSaGvg%3D%3D" target="_blank" rel="noopener">Request service online</a>
+            <a class="btn secondary" href="tel:+15856971055">Call the shop</a>
+          </div>
+        </div>
+        <aside class="quick-card" aria-label="Quick service options">
+          <h2>How can we help?</h2>
+          <p>Choose the option that works best for you.</p>
+          <div class="quick-list">
+            <a class="quick-link" href="https://www.mitchell1crm.com/crmutilities/RequestAppointment.aspx?c=EAAAAF9Zk9RWtR9TLxLyuD%2BQtqorLqREYbNuVPWYfHmFP%2BiwoCRCEsiiSPU2TPC7rSaGvg%3D%3D" target="_blank" rel="noopener">
+              <span class="quick-icon"><svg viewBox="0 0 24 24"><path d="M7 3v3M17 3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v14H4V6a1 1 0 0 1 1-1Z"/><path d="m9 15 2 2 4-5"/></svg></span>
+              <span><strong>Request an appointment</strong><small>Send the details when it’s convenient</small></span><span class="arrow">›</span>
+            </a>
+            <a class="quick-link" href="tel:+15856971055">
+              <span class="quick-icon"><svg viewBox="0 0 24 24"><path d="M7 3h3l1.5 4-2 1.6a15 15 0 0 0 6 6l1.6-2 3.9 1.5V17a4 4 0 0 1-4 4C9.3 20.5 3.5 14.7 3 7a4 4 0 0 1 4-4Z"/></svg></span>
+              <span><strong>Speak with the shop</strong><small>(585) 697-1055</small></span><span class="arrow">›</span>
+            </a>
+            <a class="quick-link" href="https://www.google.com/maps/search/?api=1&amp;query=2500+Dewey+Ave+Rochester+NY+14616" target="_blank" rel="noopener">
+              <span class="quick-icon"><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+              <span><strong>Get directions</strong><small>2500 Dewey Avenue, Rochester</small></span><span class="arrow">›</span>
+            </a>
+          </div>
+          <div class="open-row"><span>Monday–Thursday</span><strong>8:00 AM–5:00 PM</strong></div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="trust">
+      <div class="wrap trust-grid">
+        <div class="trust-item"><strong>5.0 <span class="stars">★★★★★</span></strong><span>Verified customer rating</span></div>
+        <div class="trust-item"><strong>873 Reviews</strong><span>Customer experiences shared</span></div>
+        <div class="trust-item"><strong>Since 2012</strong><span>Serving Rochester drivers</span></div>
+        <div class="trust-item"><strong>A+ BBB Rating</strong><span>BBB Accredited Business</span></div>
+      </div>
+    </div>
+
+    <section class="ways" id="options">
+      <div class="wrap">
+        <div class="section-intro">
+          <div><div class="eyebrow">Help without the hassle</div><h2>Choose your easiest next step.</h2></div>
+          <p>No searching through separate listings. The details drivers need are organized in one clear, mobile-friendly place.</p>
+        </div>
+        <div class="way-grid">
+          <article class="way-card">
+            <span class="way-number">01</span><div class="way-icon"><svg viewBox="0 0 24 24"><path d="M7 3v3M17 3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v14H4V6a1 1 0 0 1 1-1Z"/><path d="m9 15 2 2 4-5"/></svg></div>
+            <h3>Request service online</h3><p>Share your vehicle and service needs without having to catch the shop by phone.</p>
+            <a href="https://www.mitchell1crm.com/crmutilities/RequestAppointment.aspx?c=EAAAAF9Zk9RWtR9TLxLyuD%2BQtqorLqREYbNuVPWYfHmFP%2BiwoCRCEsiiSPU2TPC7rSaGvg%3D%3D" target="_blank" rel="noopener">Start a request →</a>
+          </article>
+          <article class="way-card">
+            <span class="way-number">02</span><div class="way-icon"><svg viewBox="0 0 24 24"><path d="M7 3h3l1.5 4-2 1.6a15 15 0 0 0 6 6l1.6-2 3.9 1.5V17a4 4 0 0 1-4 4C9.3 20.5 3.5 14.7 3 7a4 4 0 0 1 4-4Z"/></svg></div>
+            <h3>Call when you prefer</h3><p>Tap once from your phone to speak directly with Pro-Service during business hours.</p>
+            <a href="tel:+15856971055">Call (585) 697-1055 →</a>
+          </article>
+          <article class="way-card">
+            <span class="way-number">03</span><div class="way-icon"><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+            <h3>Find the shop quickly</h3><p>Open turn-by-turn directions to 2500 Dewey Avenue without copying the address.</p>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=2500+Dewey+Ave+Rochester+NY+14616" target="_blank" rel="noopener">Open directions →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="wrap">
+        <div class="section-intro">
+          <div><div class="eyebrow">Full-service auto care</div><h2>Start with what your car needs.</h2></div>
+          <p>Clear service categories help customers know they’re in the right place before they call or send a request.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service"><span>01</span><h3>Routine maintenance</h3><p>Help keeping up with the care your vehicle needs over time.</p></article>
+          <article class="service"><span>02</span><h3>Oil changes</h3><p>Regular oil service with an easy way to request an appointment.</p></article>
+          <article class="service"><span>03</span><h3>NYS inspections</h3><p>Convenient access to inspection information and shop contact details.</p></article>
+          <article class="service"><span>04</span><h3>Diagnostics</h3><p>Start the conversation when a warning light, sound or performance issue appears.</p></article>
+          <article class="service"><span>05</span><h3>General auto repair</h3><p>A clear starting point for repairs large or small at a full-service shop.</p></article>
+          <article class="service"><span>06</span><h3>Not sure what’s wrong?</h3><p>Describe what you’re noticing and let the shop guide the next step.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="ready">
+      <div class="wrap ready-grid">
+        <div class="ready-copy">
+          <div class="eyebrow">A faster first conversation</div>
+          <h2>Have these details ready.</h2>
+          <p>A little information up front can make it easier for the shop to understand what you need and follow up efficiently.</p>
+          <a class="btn primary" href="https://www.mitchell1crm.com/crmutilities/RequestAppointment.aspx?c=EAAAAF9Zk9RWtR9TLxLyuD%2BQtqorLqREYbNuVPWYfHmFP%2BiwoCRCEsiiSPU2TPC7rSaGvg%3D%3D" target="_blank" rel="noopener">Request service</a>
+        </div>
+        <div class="checklist">
+          <h3>Before you reach out</h3>
+          <div class="check"><span>✓</span><div><strong>Your vehicle</strong><small>Year, make and model</small></div></div>
+          <div class="check"><span>✓</span><div><strong>What you’re noticing</strong><small>Warning lights, sounds, leaks or performance changes</small></div></div>
+          <div class="check"><span>✓</span><div><strong>Your availability</strong><small>Preferred day or time for service</small></div></div>
+          <div class="check"><span>✓</span><div><strong>The best way to reach you</strong><small>Phone number and contact information</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reputation" id="reviews">
+      <div class="wrap rep-grid">
+        <div class="score-card">
+          <div><div class="big">5.0<span>/5</span></div><div class="stars">★★★★★</div></div>
+          <div><p>873 verified customer reviews</p><small>Review total shown on SureCritic</small></div>
+        </div>
+        <div class="rep-copy">
+          <div class="eyebrow">A reputation drivers already trust</div>
+          <h2>Make hundreds of reviews easier to find.</h2>
+          <p>Pro-Service already has strong third-party validation. A dedicated website can bring that trust together with services, hours, directions and appointment access—so customers don’t have to piece it together themselves.</p>
+          <div class="rep-links">
+            <a class="btn primary" href="https://www.surecritic.com/reviews/pro-service-auto-repair" target="_blank" rel="noopener">Read verified reviews</a>
+            <a class="btn secondary" href="https://www.bbb.org/us/ny/rochester/profile/auto-repair/pro-service-auto-repair-llc-0041-235984590" target="_blank" rel="noopener">View BBB profile</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap cta-grid">
+        <div><div class="eyebrow">Ready when you are</div><h2>Get your vehicle on the schedule.</h2><p>Send a service request online or call Pro-Service directly.</p></div>
+        <div class="cta-actions">
+          <a class="btn primary" href="https://www.mitchell1crm.com/crmutilities/RequestAppointment.aspx?c=EAAAAF9Zk9RWtR9TLxLyuD%2BQtqorLqREYbNuVPWYfHmFP%2BiwoCRCEsiiSPU2TPC7rSaGvg%3D%3D" target="_blank" rel="noopener">Request service</a>
+          <a class="btn secondary" href="tel:+15856971055">Call (585) 697-1055</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div><strong>Pro-Service Auto Repair</strong><small>2500 Dewey Avenue, Rochester, NY 14616 · Concept website using publicly available business information.</small></div>
+      <div class="footer-info">Mon–Thu: 8:00 AM–5:00 PM<br>Fri: 8:00 AM–1:00 PM · Sat–Sun: Closed</div>
+    </div>
+  </footer>
+
+  <div class="mobile-bar" aria-label="Quick mobile actions">
+    <a href="tel:+15856971055">Call the shop</a>
+    <a href="https://www.mitchell1crm.com/crmutilities/RequestAppointment.aspx?c=EAAAAF9Zk9RWtR9TLxLyuD%2BQtqorLqREYbNuVPWYfHmFP%2BiwoCRCEsiiSPU2TPC7rSaGvg%3D%3D" target="_blank" rel="noopener">Request service</a>
+  </div>
+</body>
+</html>
