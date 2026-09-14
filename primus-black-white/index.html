@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Primus Home Remodeling | Rochester, NY</title>
+  <meta name="description" content="Kitchen, bathroom, basement and exterior remodeling for Rochester-area homeowners. Request a free estimate from Primus Home Remodeling.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Cpath d='M14 50V24L32 10l18 14v26H37V36H27v14Z' fill='none' stroke='%23fff' stroke-width='5'/%3E%3C/svg%3E">
+  <style>
+    :root{--black:#050505;--white:#fff;--soft:#f2f2f2;--gray:#666;--line:#cfcfcf}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:86px}
+    body{margin:0;background:var(--white);color:var(--black);font:400 1rem/1.55 "Inter Tight",Arial,sans-serif;overflow-x:hidden}
+    a{color:inherit;text-decoration:none}
+    button,input,select,textarea{font:inherit}
+    img{display:block;max-width:100%}
+    .container{width:min(1220px,calc(100% - 44px));margin-inline:auto}
+    .demo-note{background:var(--white);color:var(--black);border-bottom:1px solid var(--black);text-align:center;padding:7px 14px;font-size:.73rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+    header{position:sticky;top:0;z-index:20;background:var(--black);color:var(--white)}
+    nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .logo{display:flex;align-items:center;gap:14px}
+    .logo-icon{width:42px;height:42px;border:2px solid var(--white);display:grid;place-items:center;font-family:"Archivo Black";font-size:1.2rem}
+    .logo-text strong{display:block;font-family:"Archivo Black";font-size:1rem;letter-spacing:.12em;line-height:1}
+    .logo-text span{display:block;margin-top:6px;color:#bbb;font-size:.67rem;letter-spacing:.18em}
+    .nav-links{display:flex;align-items:center;gap:28px;font-weight:700;font-size:.9rem}
+    .nav-links>a:not(.quote-link):hover{color:#bbb}
+    .quote-link{background:var(--white);color:var(--black);padding:13px 18px;border:2px solid var(--white)}
+    .quote-link:hover{background:var(--black);color:var(--white)}
+    .hero{border-bottom:1px solid var(--black)}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(420px,.88fr);min-height:670px}
+    .hero-copy{padding:92px max(42px,calc((100vw - 1220px)/2)) 78px max(22px,calc((100vw - 1220px)/2));display:flex;flex-direction:column;justify-content:center}
+    .kicker{display:flex;align-items:center;gap:12px;font-weight:800;font-size:.77rem;letter-spacing:.18em;text-transform:uppercase}
+    .kicker:before{content:"";width:38px;height:4px;background:var(--black)}
+    h1,h2,h3{margin:0}
+    h1,h2{font-family:"Archivo Black",sans-serif;text-transform:uppercase;letter-spacing:-.045em;line-height:.93}
+    h1{font-size:clamp(3.5rem,7vw,7.6rem);max-width:780px;margin:28px 0}
+    .hero-copy p{font-size:1.13rem;max-width:590px;color:#3d3d3d;margin:0 0 34px}
+    .actions{display:flex;flex-wrap:wrap;gap:11px}
+    .btn{display:inline-flex;justify-content:center;align-items:center;min-height:52px;padding:0 23px;border:2px solid var(--black);font-weight:800;cursor:pointer;transition:.18s}
+    .btn.dark{background:var(--black);color:var(--white)}
+    .btn.dark:hover{background:var(--white);color:var(--black)}
+    .btn.light{background:var(--white)}
+    .btn.light:hover{background:var(--black);color:var(--white)}
+    .hero-image{position:relative;min-height:550px;background:#222;overflow:hidden}
+    .hero-image img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.08);object-position:62% center}
+    .hero-image:after{content:"EST. 2017";position:absolute;right:0;bottom:0;background:var(--white);color:var(--black);padding:18px 24px;font-family:"Archivo Black";letter-spacing:.08em}
+    .stats{background:var(--black);color:var(--white)}
+    .stats-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+    .stat{padding:26px 30px;border-right:1px solid #3e3e3e}
+    .stat:first-child{padding-left:0}.stat:last-child{border-right:0}
+    .stat strong{display:block;font-family:"Archivo Black";font-size:1.35rem}.stat span{color:#aaa;font-size:.87rem}
+    section{padding:104px 0}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:50px;margin-bottom:52px}
+    .section-head h2{font-size:clamp(2.8rem,5vw,5.7rem);max-width:760px}
+    .section-head p{max-width:430px;color:var(--gray);margin:0 0 5px;font-size:1.05rem}
+    .services{background:var(--white)}
+    .service-list{border-top:3px solid var(--black)}
+    .service-row{display:grid;grid-template-columns:90px 1fr 1.1fr;gap:30px;align-items:center;padding:30px 0;border-bottom:1px solid var(--line)}
+    .service-num{font-family:"Archivo Black";font-size:1.1rem}
+    .service-row h3{font-family:"Archivo Black";font-size:1.6rem;text-transform:uppercase;letter-spacing:-.025em}
+    .service-row p{color:var(--gray);margin:0}
+    .service-row:hover{background:var(--soft)}
+    .process{background:var(--black);color:var(--white)}
+    .process .kicker:before{background:var(--white)}
+    .process-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:90px}
+    .process h2{font-size:clamp(3rem,5.5vw,6rem);margin:22px 0 28px}
+    .process-intro{color:#b9b9b9;font-size:1.08rem;max-width:490px}
+    .steps{border-top:1px solid #444}
+    .step{display:grid;grid-template-columns:60px 1fr;gap:25px;padding:30px 0;border-bottom:1px solid #444}
+    .step-no{font-family:"Archivo Black";color:#aaa}
+    .step h3{font-family:"Archivo Black";font-size:1.35rem;text-transform:uppercase;margin-bottom:8px}
+    .step p{color:#aaa;margin:0;max-width:560px}
+    .reviews{background:var(--soft)}
+    .rating-line{display:flex;gap:16px;align-items:center;margin-top:24px}
+    .rating-line strong{font-family:"Archivo Black";font-size:2.6rem}.stars{letter-spacing:.12em;font-size:1.1rem}
+    .review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:2px solid var(--black)}
+    blockquote{margin:0;padding:32px;background:var(--white);border-right:1px solid var(--black);min-height:245px;display:flex;flex-direction:column;justify-content:space-between}
+    blockquote:last-child{border-right:0}
+    blockquote p{font-weight:600;font-size:1.08rem;margin:0 0 30px}
+    blockquote footer{font-weight:800;text-transform:uppercase;font-size:.8rem;letter-spacing:.08em}
+    blockquote footer span{display:block;color:var(--gray);font-weight:500;text-transform:none;letter-spacing:0;margin-top:5px}
+    .contact-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:85px;align-items:start}
+    .contact h2{font-size:clamp(3rem,5vw,5.7rem);margin:22px 0 25px}
+    .contact-copy>p{color:var(--gray);font-size:1.08rem}
+    .contact-list{margin-top:34px;border-top:2px solid var(--black)}
+    .contact-list a,.contact-list div{display:block;padding:17px 0;border-bottom:1px solid var(--line);font-weight:800}
+    .contact-list small{display:block;color:var(--gray);font-weight:500}
+    form{border:3px solid var(--black);padding:36px}
+    .fields{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .field{display:grid;gap:8px}.field.full{grid-column:1/-1}
+    label{font-weight:800;font-size:.88rem;text-transform:uppercase;letter-spacing:.06em}
+    input,select,textarea{width:100%;border:1px solid #8f8f8f;border-radius:0;background:var(--white);padding:14px;color:var(--black);outline:none}
+    input:focus,select:focus,textarea:focus{border:2px solid var(--black);padding:13px}
+    textarea{min-height:125px;resize:vertical}
+    .form-bottom{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:22px}
+    .form-bottom small{color:var(--gray);max-width:280px}
+    .form-message{display:none;background:var(--black);color:var(--white);padding:15px;margin-top:18px;font-weight:700}
+    .form-message.show{display:block}
+    .site-footer{background:var(--black);color:var(--white);padding:36px 0}
+    .footer-row{display:flex;justify-content:space-between;align-items:center;gap:24px}
+    .footer-brand{font-family:"Archivo Black";letter-spacing:.08em}.footer-row small{color:#aaa}
+    .footer-links{display:flex;gap:24px;color:#ccc;font-size:.9rem}
+    @media(max-width:900px){.nav-links>a:not(.quote-link){display:none}.hero-grid{grid-template-columns:1fr}.hero-copy{padding:76px 24px}.hero-image{min-height:480px}.section-head{display:block}.section-head p{margin-top:28px}.process-grid,.contact-grid{grid-template-columns:1fr;gap:50px}.review-grid{grid-template-columns:1fr}blockquote{border-right:0;border-bottom:1px solid var(--black);min-height:200px}blockquote:last-child{border-bottom:0}}
+    @media(max-width:620px){.container{width:calc(100% - 28px)}.demo-note{font-size:.64rem}.logo-text span{display:none}.logo-text strong{font-size:.82rem}.logo-icon{width:36px;height:36px}.quote-link{padding:11px 12px;font-size:.78rem}.hero-grid{min-height:0}.hero-copy{padding:64px 15px}.hero-image{min-height:380px}h1{font-size:clamp(3.1rem,16vw,5.2rem)}.actions{display:grid}.stats-grid{grid-template-columns:1fr}.stat,.stat:first-child{padding:16px 0;border-right:0;border-bottom:1px solid #3e3e3e}.stat:last-child{border-bottom:0}section{padding:74px 0}.service-row{grid-template-columns:48px 1fr;gap:18px}.service-row p{grid-column:2}.fields{grid-template-columns:1fr}.form-bottom,.footer-row{align-items:stretch;flex-direction:column}.form-bottom .btn{width:100%}form{padding:25px 18px}.footer-links{flex-wrap:wrap}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="demo-note">Black &amp; white website concept prepared for Primus Home Remodeling</div>
+  <header>
+    <nav class="container" aria-label="Main navigation">
+      <a class="logo" href="#top" aria-label="Primus Home Remodeling home"><span class="logo-icon">P</span><span class="logo-text"><strong>PRIMUS</strong><span>HOME REMODELING</span></span></a>
+      <div class="nav-links"><a href="#services">Services</a><a href="#process">Process</a><a href="#reviews">Reviews</a><a class="quote-link" href="#estimate">Free estimate</a></div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="kicker">Rochester, New York</div>
+          <h1>Built right. Made yours.</h1>
+          <p>Kitchen, bathroom, basement and exterior remodeling shaped around your home, your priorities and the way you live.</p>
+          <div class="actions"><a class="btn dark" href="#estimate">Request a free estimate</a><a class="btn light" href="#services">View our services</a></div>
+        </div>
+        <div class="hero-image"><img src="https://primus-home-remodeling-demo.safe-chord-5366.chatgpt.site/assets/primus-hero.png" alt="Newly remodeled open-plan kitchen and living room"></div>
+      </div>
+      <div class="stats"><div class="container stats-grid"><div class="stat"><strong>Serving since 2017</strong><span>Established Rochester contractor</span></div><div class="stat"><strong>5.0 customer rating</strong><span>Based on 20 Google reviews</span></div><div class="stat"><strong>Interior + exterior</strong><span>One team for the whole home</span></div></div></div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head"><div><div class="kicker">What we do</div><h2>From one room to the whole home.</h2></div><p>Clear information helps homeowners quickly understand whether Primus is the right team for their project—and gives them an immediate next step.</p></div>
+        <div class="service-list">
+          <article class="service-row"><div class="service-num">01</div><h3>Kitchen remodeling</h3><p>Layouts, cabinetry, counters, flooring and finishing details that make the kitchen work better every day.</p></article>
+          <article class="service-row"><div class="service-num">02</div><h3>Bathroom remodeling</h3><p>Thoughtful updates to showers, tile, vanities, fixtures and storage—from refreshes to full renovations.</p></article>
+          <article class="service-row"><div class="service-num">03</div><h3>Basements &amp; interiors</h3><p>Basement finishing, drywall, painting, flooring, carpentry and interior repairs that create useful new space.</p></article>
+          <article class="service-row"><div class="service-num">04</div><h3>Roofing &amp; siding</h3><p>Exterior improvements and storm-damage repairs that protect the home while strengthening curb appeal.</p></article>
+          <article class="service-row"><div class="service-num">05</div><h3>Windows &amp; doors</h3><p>Installation and replacement work that improves comfort, function, security and the finished look of the home.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div class="container process-grid">
+        <div><div class="kicker">The Primus approach</div><h2>A clear path from idea to done.</h2><p class="process-intro">Homeowners should never be left guessing about the next step. The process begins with a conversation and stays centered on the result they want.</p></div>
+        <div class="steps">
+          <article class="step"><div class="step-no">01</div><div><h3>Talk through the vision</h3><p>Share what you want to change, what is not working now and what matters most in the finished space.</p></div></article>
+          <article class="step"><div class="step-no">02</div><div><h3>Shape the project</h3><p>Define the work, materials and expectations so the plan is clear before construction begins.</p></div></article>
+          <article class="step"><div class="step-no">03</div><div><h3>Build with care</h3><p>Complete the transformation with attention to detail, communication and a final walkthrough.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <div class="section-head"><div><div class="kicker">Customer experience</div><h2>Recommended for a reason.</h2><div class="rating-line"><strong>5.0</strong><div><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><small>20 Google reviews</small></div></div></div><p>Recent reviewers consistently mention communication, reliability, attention to detail and work completed on time.</p></div>
+        <div class="review-grid">
+          <blockquote><p>“Ryan listened closely, understood the vision and brought it to life.”</p><footer>Recent customer<span>Rochester-area remodeling project</span></footer></blockquote>
+          <blockquote><p>“The team was clean, detailed and finished the project on time.”</p><footer>Recent customer<span>Drywall and painting project</span></footer></blockquote>
+          <blockquote><p>“Reliable across projects large and small, with clear communication throughout.”</p><footer>Local property owner<span>Multiple renovation projects</span></footer></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="estimate">
+      <div class="container contact-grid">
+        <div class="contact-copy"><div class="kicker">Free estimate</div><h2>Tell us what you want to change.</h2><p>Send a few project details and Primus can follow up to learn more, answer questions and discuss the right next step.</p><div class="contact-list"><a href="tel:+15852592503"><small>Call Primus directly</small>(585) 259-2503</a><div><small>Service area</small>Rochester and surrounding communities</div><div><small>Based in</small>Rochester, New York</div></div></div>
+        <form id="estimate-form">
+          <div class="fields">
+            <div class="field"><label for="name">Name</label><input id="name" autocomplete="name" required placeholder="Your name"></div>
+            <div class="field"><label for="phone">Phone</label><input id="phone" autocomplete="tel" required placeholder="(585) 555-0123"></div>
+            <div class="field full"><label for="email">Email</label><input id="email" type="email" autocomplete="email" placeholder="you@example.com"></div>
+            <div class="field full"><label for="service">Project type</label><select id="service" required><option value="">Choose a project type</option><option>Kitchen remodel</option><option>Bathroom remodel</option><option>Basement or interior</option><option>Roofing or siding</option><option>Windows or doors</option><option>Storm-damage repair</option><option>Other project</option></select></div>
+            <div class="field full"><label for="details">Project details</label><textarea id="details" placeholder="What would you like to update, and when are you hoping to begin?"></textarea></div>
+          </div>
+          <div class="form-bottom"><small>No pressure—just a straightforward conversation about your project.</small><button class="btn dark" type="submit">Request my estimate</button></div>
+          <div class="form-message" id="form-message" role="status">Thank you! This concept demonstrates how Primus could collect project details directly from interested homeowners.</div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-row"><div><div class="footer-brand">PRIMUS HOME REMODELING</div><small>Rochester, New York · (585) 259-2503</small></div><div class="footer-links"><a href="#services">Services</a><a href="#process">Process</a><a href="#reviews">Reviews</a><a href="#estimate">Free estimate</a></div></div></footer>
+  <script>
+    document.getElementById("estimate-form").addEventListener("submit",function(event){
+      event.preventDefault();
+      const message=document.getElementById("form-message");
+      message.classList.add("show");
+      message.scrollIntoView({behavior:"smooth",block:"nearest"});
+    });
+  </script>
+</body>
+</html>
