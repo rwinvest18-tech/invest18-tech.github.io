@@ -1,4 +1,4 @@
-name: Deploy Abe's Airlines demo
+name: Deploy DISTINQ Demo Sites
 on:
   push:
     branches: [main]
